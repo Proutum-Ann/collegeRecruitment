@@ -16,13 +16,50 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <!-- Flickity -->
+        <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
     </head>
 
     <body>
         <header>
-            <!-- place navbar here -->
+            <nav class="navbar bg-body-tertiary">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                    <img class="d-none d-md-block" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Rutgers_University_with_the_state_university_logo.svg/500px-Rutgers_University_with_the_state_university_logo.svg.png" width="150">
+                    <img class="d-md-none" src="https://1000logos.net/wp-content/uploads/2019/11/Rutgers-Scarlet-Knights-Logo.png" width="100">
+                    </a>
+                </div>
+            </nav>
         </header>
-        <main></main>
+        <main>
+            <!-- Hero Image -->
+            <div class="heroImage-wrapper">
+                <div class="heroImage"></div>
+            </div>
+            <!-- Top Blurbs-->
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-8">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non quam tenetur cumque. Numquam molestiae ipsum mollitia minus ab rerum labore. Quod nobis voluptatibus inventore, id maiores quidem fugiat quam sit itaque sunt minus, dolor aliquid maxime asperiores praesentium commodi. Nesciunt tenetur, sint aut deleniti eveniet ratione nemo atque eligendi ut eum corporis accusantium praesentium incidunt delectus expedita inventore velit quisquam non cum impedit dolorem? Provident maxime soluta cupiditate voluptatibus vel voluptates, nam cumque obcaecati nisi! Ex sint animi sit consequatur temporibus eaque maxime quisquam ea enim pariatur aspernatur, numquam commodi praesentium! Officia sed expedita nesciunt a consequatur voluptatem minima dicta.</p>
+                </div>
+            </div>
+            <!-- Courses -->
+            <div class="row" id="featuredCourses">
+
+            </div>
+
+            <!-- Clubs (https://css-tricks.com/css-only-carousel/) -->
+            <div class="row">
+                <div class="gallery js-flickity"
+                data-flickity-options='{ "wrapAround": true }' id="featuredClubs">
+                <div class="gallery-cell"></div>
+                <div class="gallery-cell"></div>
+                <div class="gallery-cell"></div>
+                <div class="gallery-cell"></div>
+                <div class="gallery-cell"></div>
+                </div>
+            </div>
+        </main>
         <footer>
             <!-- place footer here -->
         </footer>
@@ -41,5 +78,7 @@
         <script src="js/script.js"></script>
         <script src="js/clubs.js"></script>
         <script src="js/course.js"></script>
+        <!-- Flickity -->
+        <script src="/path/to/flickity.pkgd.min.js"></script>
     </body>
 </html>

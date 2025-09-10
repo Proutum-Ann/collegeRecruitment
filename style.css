@@ -1,0 +1,28 @@
+body{
+    overflow-x: hidden;
+}
+
+/* Blurred hero image (https://jsfiddle.net/Will_law/Lo0n9g2y/) */
+.heroImage-wrapper{
+    width: 100%;
+    height: 400px;
+    overflow: hidden
+}
+
+.heroImage{
+    background-image: url(https://marvel-b1-cdn.bc0a.com/f00000000290162/images.ctfassets.net/2htm8llflwdx/56BgnFdpJhvQwonBTZsqD7/d61c705e9187e1dc140dbe4621a24718/Shorelight_RNB_Partner_News_Article.jpg?fit=thumb);
+    width: 105%;
+    height: 105%;
+    margin: -5px;
+    filter: blur(5px);
+}
+
+/* cell number (https://css-tricks.com/css-only-carousel/) */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
