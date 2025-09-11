@@ -1,3 +1,7 @@
+const quotes = [
+    `Sol Iustitiae et Occidentem Illustra`
+]
+
 document.addEventListener('DOMContentLoaded', () => {
     const courses = document.getElementById('featuredCourses')
     const clubs = document.getElementById('featuredClubs')
