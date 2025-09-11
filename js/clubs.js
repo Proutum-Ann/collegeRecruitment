@@ -1,8 +1,9 @@
 const clubs = [
     {
-      name: '',
-      logo: '' ,
-      subject: '',
-      type: ''
+      name: 'test',
+      logo: 'imgs/' + this.name + '.png' ,
+      subject: 'test',
+      type: 'test',
+      desc: 'yeah'
     }
 ]
