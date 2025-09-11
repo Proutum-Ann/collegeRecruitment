@@ -1,8 +1,8 @@
 const courses = [
     {
-      name: '',
-      subject: '',
-      location: '',
-      type: ''
+      name: 'test',
+      subject: 'test',
+      location: 'test',
+      type: 'test'
     },
 ]
