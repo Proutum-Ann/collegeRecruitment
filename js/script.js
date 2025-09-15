@@ -3,8 +3,8 @@ const quotes = [
 ]
 
 document.addEventListener('DOMContentLoaded', () => {
-    const courses = document.getElementById('featuredCourses')
-    const clubs = document.getElementById('featuredClubs')
+    const courseGal = document.getElementById('featuredCourses')
+    const clubGal = document.getElementById('featuredClubs')
 
     const render1 = courseList => {
         courses.innerHTML = ''
@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
             featCourses.innerHTML = `
             <h3>${course.name}</h3>
             `
+            
+            courseGal.appendChild(featCourses)
         })
     }
 
@@ -25,19 +27,23 @@ document.addEventListener('DOMContentLoaded', () => {
         clubList.forEach(club => {
             const featClubs = document.createElement('div')
 
-            featClubs.className = 'gallery-cell'
+            featClubs.className = 'carousel-inner'
             featClubs.innerHTML = `
             <center>
-                <div class="card" style="width: 18rem;">
-                    <img src="${club.logo}" class="card-img-top" alt="${club.name} Logo">
-                    <div class="card-body">
-                        <h5 class="card-title">${club.name}</h5>
-                        <small>${club.type}</small>
-                        <p class="card-text">${club.name} is a ${club.subject} group ${club.desc}</p>
+                <div class="carousel-item">
+                    <div class="card" style="width: 18rem;">
+                        <!-- <img src="${club.logo}" class="card-img-top" alt="${club.name} Logo"> -->
+                        <div class="card-body">
+                            <h5 class="card-title">${club.name}</h5>
+                            <small>${club.type}</small>
+                            <p class="card-text">${club.name} is a ${club.subject} group ${club.desc}</p>
+                        </div>
                     </div>
                 </div>
             </center>
             `
+        
+            clubGal.appendChild(featClubs)
         })
     }
 

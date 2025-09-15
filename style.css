@@ -15,6 +15,8 @@ body{
     height: 105%;
     margin: -5px;
     filter: blur(5px);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* cell number (https://css-tricks.com/css-only-carousel/) */
