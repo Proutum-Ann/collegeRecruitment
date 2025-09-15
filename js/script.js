@@ -27,17 +27,15 @@ document.addEventListener('DOMContentLoaded', () => {
         clubList.forEach(club => {
             const featClubs = document.createElement('div')
 
-            featClubs.className = 'carousel-inner'
+            featClubs.className = 'col mb-2'
             featClubs.innerHTML = `
             <center>
-                <div class="carousel-item">
-                    <div class="card" style="width: 18rem;">
-                        <!-- <img src="${club.logo}" class="card-img-top" alt="${club.name} Logo"> -->
-                        <div class="card-body">
-                            <h5 class="card-title">${club.name}</h5>
-                            <small>${club.type}</small>
-                            <p class="card-text">${club.name} is a ${club.subject} group ${club.desc}</p>
-                        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="${club.logo}" class="card-img-top" alt="${club.name} Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">${club.name}</h5>
+                        <small>${club.type}</small>
+                        <p class="card-text">${club.name} is a ${club.subject} group ${club.desc}</p>
                     </div>
                 </div>
             </center>

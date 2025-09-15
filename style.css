@@ -19,12 +19,10 @@ body{
     background-repeat: no-repeat;
 }
 
-/* cell number (https://css-tricks.com/css-only-carousel/) */
-.gallery-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
+/* Gallery */
+#featuredClubs {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    max-height: 550px
 }
