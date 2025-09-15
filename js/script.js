@@ -6,6 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const courseGal = document.getElementById('featuredCourses')
     const clubGal = document.getElementById('featuredClubs')
 
+    // https://stackoverflow.com/questions/2380019/generate-unique-random-numbers-between-1-and-100
+    while(clubs.length < 6){
+        r2 = Math.floor(Math.random() * 100) + 1;
+        if(arr.indexOf(r2) === -1) arr.push(r2);
+    }
+    console.log(clubs);
+
+    // Rendering the courses and clubs
     const render1 = courseList => {
         courses.innerHTML = ''
 
