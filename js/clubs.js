@@ -21,31 +21,33 @@ const clubs = [
       desc: 'yeah'
     },
     {
-      name: 'test3',
+      name: 'test4',
       logo: 'imgs/test.png' ,
-      subject: 'test3',
-      type: 'test3',
+      subject: 'test4',
+      type: 'test4',
       desc: 'yeah'
     },
     {
-      name: 'test3',
+      name: 'test5',
       logo: 'imgs/test.png' ,
-      subject: 'test3',
-      type: 'test3',
+      subject: 'test5',
+      type: 'test5',
       desc: 'yeah'
     },
     {
-      name: 'test3',
+      name: 'test6',
       logo: 'imgs/test.png' ,
-      subject: 'test3',
-      type: 'test3',
+      subject: 'test6',
+      type: 'test6',
       desc: 'yeah'
     },
     {
-      name: 'test3',
+      name: 'test7',
       logo: 'imgs/test.png' ,
-      subject: 'test3',
-      type: 'test3',
+      subject: 'test7',
+      type: 'test7',
       desc: 'yeah'
     }
 ]
+
+var clubFeatures = []
