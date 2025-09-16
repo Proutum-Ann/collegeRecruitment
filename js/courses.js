@@ -42,3 +42,5 @@ const courses = [
       type: 'test'
     },
 ]
+
+var courseFeatures = []
