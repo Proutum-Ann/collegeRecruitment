@@ -19,6 +19,14 @@ body{
     background-repeat: no-repeat;
 }
 
+.navbar {
+    background: linear-gradient(to left, #560319, #FF2400);
+}
+
+.navbar-brand {
+    filter: drop-shadow(1px 1px 0px #fff) drop-shadow(-1px -1px 0px #fff) drop-shadow(-1px 1px 0px #fff) drop-shadow(1px -1px 0px #fff)
+}
+
 /* Gallery */
 #featuredClubs {
     overflow-x: auto;
