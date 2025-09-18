@@ -26,14 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const render2 = clubList => {
         clubGal.innerHTML = ''
 
-        function getRandomClub (randomClub) {
+        /* function getRandomClub (randomClub) {
             if (randomClub.length < 6) {
                 var randomClub = Math.floor(Math.random() * clubs.length);
                 clubFeatures.push(clubs[randomClub])
             } else {
                 return
             }
-        }
+        } */
 
         clubList.forEach(featuredClub => {
             const featClubs = document.createElement('div')
@@ -45,8 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <img src="${featuredClub.logo}" class="card-img-top" alt="${featuredClub.name} Logo">
                     <div class="card-body">
                         <h5 class="card-title">${featuredClub.name}</h5>
-                        <small>${featuredClub.type}</small>
-                        <p class="card-text">${featuredClub.name} is a ${featuredClub.subject} group ${featuredClub.desc}</p>
+                        <p style="overflow-y: auto; height: 100px">${featuredClub.name} is a ${featuredClub.type} group ${featuredClub.desc}</p>
                     </div>
                 </div>
             </center>

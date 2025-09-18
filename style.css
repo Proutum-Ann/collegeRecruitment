@@ -26,10 +26,3 @@ body{
 .navbar-brand {
     filter: drop-shadow(1px 1px 0px #fff) drop-shadow(-1px -1px 0px #fff) drop-shadow(-1px 1px 0px #fff) drop-shadow(1px -1px 0px #fff)
 }
-
-/* Gallery */
-#featuredClubs {
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap
-}

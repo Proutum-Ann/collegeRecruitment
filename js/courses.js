@@ -22,25 +22,7 @@ const courses = [
       subject: 'test',
       location: 'test',
       type: 'test'
-    },
-    {
-      name: 'test',
-      subject: 'test',
-      location: 'test',
-      type: 'test'
-    },
-    {
-      name: 'test',
-      subject: 'test',
-      location: 'test',
-      type: 'test'
-    },
-    {
-      name: 'test',
-      subject: 'test',
-      location: 'test',
-      type: 'test'
-    },
+    }
 ]
 
 var courseFeatures = []
