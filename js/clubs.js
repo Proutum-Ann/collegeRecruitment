@@ -3,36 +3,42 @@ const clubs = [
       name: 'Birdwatching Association',
       logo: 'imgs/bwa.jpg',
       type: 'recreational',
-      desc: 'and welcomes people of all experience levels to engage in a birding community!'
+      desc: 'and welcomes people of all experience levels to engage in a birding community!',
+      height: ''
     },
     {
       name: 'American Institute of Chemical Engineers',
       logo: 'imgs/aice.jpg' ,
       type: 'chemistry engineering',
-      desc: 'is the world\'s leading organization for chemical engineering professionals, with over 45,000 members from over 100 countries!'
+      desc: 'is the world\'s leading organization for chemical engineering professionals, with over 45,000 members from over 100 countries!',
+      height: '70px'
     },
     {
-      name: 'test3',
+      name: 'French Arts Culture & Inclusive Language Experience',
       logo: 'imgs/facile.jpg',
-      type: 'test3',
-      desc: 'yeah'
+      type: 'french culture',
+      desc: 'it create a safe environment to learn French arts, culture, and language!',
+      height: '45px'
     },
     {
-      name: 'test4',
+      name: 'American Choral Directors Association',
       logo: 'imgs/acda.jpg',
-      type: 'test4',
-      desc: 'yeah'
+      type: 'choir',
+      desc: 'hosts various events, professional developments, and provide networking opportunities for students interested in choral music and education!',
+      height: '70px'
     },
     {
-      name: 'test5',
+      name: 'Esports',
       logo: 'imgs/esports.jpg',
-      type: 'test5',
-      desc: 'yeah'
+      type: 'e-sports',
+      desc: 'of ALL skill levels are welcome!',
+      height: '50px'
     },
     {
-      name: 'test6',
+      name: 'Golf Sport Club',
       logo: 'imgs/gsc.jpg',
-      type: 'test6',
-      desc: 'yeah'
+      type: 'golfing recreational',
+      desc: 'encourages students of all skills to come and improve their passion for the game of golf!',
+      height: '95px'
     }
 ]
