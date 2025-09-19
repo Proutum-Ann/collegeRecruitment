@@ -8,32 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // Rendering the courses and clubs
-    const render1 = courseList => {
-        courseGal.innerHTML = ''
 
-        courseList.forEach(course => {
-            const featCourses = document.createElement('div')
-
-            featCourses.className = 'col-6 col-md-3'
-            featCourses.innerHTML = `
-            <h3>${course.name}</h3>
-            `
-            
-            courseGal.appendChild(featCourses)
-        })
-    }
-
-    const render2 = clubList => {
+    const render = clubList => {
         clubGal.innerHTML = ''
-
-        /* function getRandomClub (randomClub) {
-            if (randomClub.length < 6) {
-                var randomClub = Math.floor(Math.random() * clubs.length);
-                clubFeatures.push(clubs[randomClub])
-            } else {
-                return
-            }
-        } */
 
         clubList.forEach(featuredClub => {
             const featClubs = document.createElement('div')
@@ -55,6 +32,5 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-    render2(clubs)
-    render1(courses)
+    render(clubs)
 })
