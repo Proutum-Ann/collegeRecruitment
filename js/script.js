@@ -1,6 +1,12 @@
 const quotes = [
-    `Sol Iustitiae et Occidentem Illustra`
+    `Sol Iustitiae et Occidentem Illustra`,
+    `Curiosity. Knowledge. Purpose.`,
+    `Sun of righteousness, shine upon the West also`
 ]
+
+var randomNumber = Math.floor(Math.random() * quotes.length);
+	document.getElementById('college-quote').textContent = '“' + quotes[randomNumber].split(' — ')[0] + '”'
+	console.log(quotes[randomNumber])
 
 document.addEventListener('DOMContentLoaded', () => {
     const courseGal = document.getElementById('featuredCourses')
