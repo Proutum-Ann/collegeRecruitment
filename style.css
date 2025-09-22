@@ -1,6 +1,11 @@
 body{
     overflow-x: hidden;
+    background: linear-gradient(-45deg, #fff, #fff, #ffd6d6, #fffbc2, #fffbc2);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
+/*^^ https://codepen.io/P1N2O/pen/pyBNzX ^^*/
 
 /* Blurred hero image (https://jsfiddle.net/Will_law/Lo0n9g2y/) */
 .heroImage-wrapper{
@@ -49,9 +54,24 @@ img.card-img-top:hover {
 
 .card {
     border-radius: 0!important;
+    border: none!important
 }
 
 .card-body p {
     scrollbar-width: thin;
     scrollbar-color: #560319 rgba(0, 0, 0, 0);
+}
+
+/* Animation (https://codepen.io/P1N2O/pen/pyBNzX) */
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
