@@ -39,7 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
             featClubs.innerHTML = `
             <center>
                 <div class="card" style="width: 18rem;">
-                    <img src="${featuredClub.logo}" class="card-img-top" alt="${featuredClub.name} Logo">
+                    <a href="${featuredClub.link}" target="_blank">
+                        <img src="${featuredClub.logo}" class="card-img-top" alt="${featuredClub.name} Logo">
+                    </a>
                     <div class="card-body">
                         <h5 class="card-title">${featuredClub.name}</h5>
                         <p style="overflow-y: auto; height: ${featuredClub.height}">${featuredClub.name} is a ${featuredClub.type} group ${featuredClub.desc}</p>

@@ -26,3 +26,32 @@ body{
 .navbar-brand {
     filter: drop-shadow(1px 1px 0px #fff) drop-shadow(-1px -1px 0px #fff) drop-shadow(-1px 1px 0px #fff) drop-shadow(1px -1px 0px #fff)
 }
+
+
+.card-body {
+    border-radius: 0;
+    border: #560319 solid 3px;
+    border-top: none;
+    background: linear-gradient(to bottom, #560319, #FF2400, #fff);
+    color: #fff!important;
+}
+
+.card-img-top {
+    border-radius: 0!important;
+    border: #ffe550 solid 3px;
+    border-bottom: none;
+    transition: 1s;
+}
+
+img.card-img-top:hover {
+    filter: grayscale(100%)!important
+}
+
+.card {
+    border-radius: 0!important;
+}
+
+.card-body p {
+    scrollbar-width: thin;
+    scrollbar-color: #560319 rgba(0, 0, 0, 0);
+}
