@@ -3,7 +3,7 @@ body{
     background: linear-gradient(-45deg, #fff, #fff, #ffd6d6, #fffbc2, #fffbc2);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-	height: 100vh;
+	height: 1000%;
 }
 /*^^ https://codepen.io/P1N2O/pen/pyBNzX ^^*/
 
@@ -33,11 +33,9 @@ body{
 }
 
 
-.card-body {
+.club-card {
     border-radius: 0;
-    border: #560319 solid 3px;
-    border-top: none;
-    background: linear-gradient(to bottom, #560319, #FF2400, #fff);
+    background: #560319!important;
     color: #fff!important;
 }
 
@@ -60,6 +58,11 @@ img.card-img-top:hover {
 .card-body p {
     scrollbar-width: thin;
     scrollbar-color: #560319 rgba(0, 0, 0, 0);
+}
+
+.faculty-card {
+    background-color: #fff!important;
+    color: black
 }
 
 /* Animation (https://codepen.io/P1N2O/pen/pyBNzX) */

@@ -31,7 +31,7 @@ const clubs = [
       height: '70px',
       link: 'https://rutgers.campuslabs.com/engage/organization/acda'
     },
-    {
+    /* {
       name: 'Esports',
       logo: 'imgs/esports.jpg',
       type: 'e-sports',
@@ -46,5 +46,5 @@ const clubs = [
       desc: 'encourages students of all skills to come and improve their passion for the game of golf!',
       height: '95px',
       link: 'https://rutgers.campuslabs.com/engage/organization/golfclub'
-    }
+    }*/
 ]

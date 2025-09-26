@@ -25,11 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(videos[randomVid])
 
     const clubGal = document.getElementById('featuredClubs')
+    const facGal = document.getElementById('facultyGal')
 
 
     // Rendering clubs
 
-    const render = clubList => {
+    const render1 = clubList => {
         clubGal.innerHTML = ''
 
         clubList.forEach(featuredClub => {
@@ -38,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             featClubs.className = 'col mb-2'
             featClubs.innerHTML = `
             <center>
-                <div class="card" style="width: 18rem;">
+                <div class="card club-card" style="width: 18rem;">
                     <a href="${featuredClub.link}" target="_blank">
                         <img src="${featuredClub.logo}" class="card-img-top" alt="${featuredClub.name} Logo">
                     </a>
@@ -54,13 +55,34 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-    render(clubs)
+    render1(clubs)
 
-    const render2 = facultyList => {
-        document.getElementById('facultyGal').innerHTML = ''
+    //Rendering Faculty
 
-        facultyList.forEach(featuredFaculty =>
-            s
-        )
+    const render2 = facList => {
+        facGal.innerHTML = ''
+
+        facList.forEach(featuredFac => {
+            const featFac = document.createElement('div')
+
+            featFac.className = 'col mb-2'
+            featFac.innerHTML = `
+            <center>
+                <div class="card faculty-card" style="width: 18rem;">
+                    <img src="${featuredFac.image}" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">${featuredFac.name}</h5>
+                        <p><small>${featuredFac.position}</small><br>
+                        ${featuredFac.subject}<br>
+                        <small><a href="${featuredFac.email}" target="_blank">${featuredFac.email}</a></small></p>
+                    </div>
+                </div>
+            </center>
+            `
+        
+            facGal.appendChild(featFac)
+        })
     }
+
+    render2(staff)
 })
