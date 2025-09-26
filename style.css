@@ -35,14 +35,21 @@ h1, h2, h3, h4, h5 {
     background-repeat: no-repeat;
 }
 
-.navbar {
+.navbar, footer {
     background: linear-gradient(to left, #560319, #FF2400);
+}
+
+footer {
+    color: #fff!important
+}
+
+footer a {
+    color: #ffe550!important;
 }
 
 .navbar-brand {
     filter: drop-shadow(1px 1px 0px #fff) drop-shadow(-1px -1px 0px #fff) drop-shadow(-1px 1px 0px #fff) drop-shadow(1px -1px 0px #fff)
 }
-
 
 .club-card {
     border-radius: 0;
@@ -92,6 +99,11 @@ td {
     border: #ffe550 dashed 1px!important
 }
 
+
+iframe {
+    border: #ffe550 double 10px!important;
+    background-color: #fff;
+}
 /* Animation (https://codepen.io/P1N2O/pen/pyBNzX) */
 
 @keyframes gradient {
