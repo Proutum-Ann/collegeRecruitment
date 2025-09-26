@@ -4,6 +4,7 @@ body{
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 1000%;
+    color: #560319!important
 }
 /*^^ https://codepen.io/P1N2O/pen/pyBNzX ^^*/
 
@@ -63,6 +64,22 @@ img.card-img-top:hover {
 .faculty-card {
     background-color: #fff!important;
     color: black
+}
+
+table {
+    background-color: #fff;
+    color:  #560319;
+    border: #ffe550 solid;
+}
+
+th {
+    background-color: #560319;
+    color: #fff;
+    border-bottom: #ffe550 double!important;
+}
+
+td {
+    border: #ffe550 dashed 1px!important
 }
 
 /* Animation (https://codepen.io/P1N2O/pen/pyBNzX) */
