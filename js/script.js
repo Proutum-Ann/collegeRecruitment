@@ -24,13 +24,36 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('videoplayer').src = videos[randomVid]
     console.log(videos[randomVid])
 
+    const proGal = document.getElementById('featuredPrograms')
     const clubGal = document.getElementById('featuredClubs')
     const facGal = document.getElementById('facultyGal')
 
+    // Rendering programs
+
+    const render1 = clubList => {
+        proGal.innerHTML = ''
+
+        clubList.forEach(featuredProgram => {
+            const featPro = document.createElement('div')
+
+            featPro.className = 'col mb-2'
+            featPro.innerHTML = `
+            <center>
+                <h5 class="card-title">${featuredProgram.name}</h5>
+                <small>${featuredProgram.majmin}</small>
+                <p>${featuredProgram.desc}</p>
+            </center>
+            `
+        
+            proGal.appendChild(featPro)
+        })
+    }
+
+    render1(programs)
 
     // Rendering clubs
 
-    const render1 = clubList => {
+    const render2 = clubList => {
         clubGal.innerHTML = ''
 
         clubList.forEach(featuredClub => {
@@ -55,11 +78,11 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-    render1(clubs)
+    render2(clubs)
 
     //Rendering Faculty
 
-    const render2 = facList => {
+    const render3 = facList => {
         facGal.innerHTML = ''
 
         facList.forEach(featuredFac => {
@@ -84,5 +107,5 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-    render2(staff)
+    render3(staff)
 })

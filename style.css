@@ -70,7 +70,6 @@ footer a {
 }
 
 img.card-img-top:hover {
-    filter: grayscale(100%)!important;
     border-bottom: #ffe550 solid 3px
 }
 
