@@ -55,4 +55,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     render(clubs)
+
+    const render2 = facultyList => {
+        document.getElementById('facultyGal').innerHTML = ''
+
+        facultyList.forEach(featuredFaculty =>
+            s
+        )
+    }
 })
