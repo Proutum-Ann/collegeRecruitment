@@ -70,7 +70,8 @@ footer a {
 }
 
 img.card-img-top:hover {
-    filter: grayscale(100%)!important
+    filter: grayscale(100%)!important;
+    border-bottom: #ffe550 solid 3px
 }
 
 .card {
@@ -103,6 +104,22 @@ td {
 iframe {
     border: #ffe550 double 10px!important;
     background-color: #fff;
+    transition: .2s
+}
+
+iframe:hover {
+    border-radius: 10%;
+    transform: scale(1.05);
+    background-color: #560319;
+}
+
+a {
+    transition: .5s;
+}
+
+a:hover {
+    color: #ffdd1c;
+    transform: scale(1.05)!important;
 }
 /* Animation (https://codepen.io/P1N2O/pen/pyBNzX) */
 
